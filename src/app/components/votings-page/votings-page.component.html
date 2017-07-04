@@ -1,3 +1,12 @@
-<p>
-  votings-page works!
-</p>
+<div class="container">
+  <div class="tool-bar align-right">
+    <button
+      md-raised-button
+      color='primary'
+      (click)="addVoting()">ADD</button>
+  </div>
+  <app-votings-list
+    [data]='items'
+    (onItemClick)="onItemClick($event)">
+  </app-votings-list>
+</div>

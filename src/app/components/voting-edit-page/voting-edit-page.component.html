@@ -1,0 +1,12 @@
+<app-voting-edit [(data)]='item'></app-voting-edit>
+<div class="tool-bar align-right">
+  <button
+    md-raised-button
+    (click)='goBack()'>Cancel</button>
+  <button
+    md-raised-button
+    color='primary'
+    (click)='saveClick(item)'>
+    Save
+  </button>
+</div>

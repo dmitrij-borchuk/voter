@@ -1,0 +1,14 @@
+<md-input-container>
+  <input
+    mdInput
+    placeholder="Title"
+    [ngModel]="data.title"
+    (ngModelChange)="formChange($event, 'title')">
+</md-input-container>
+<md-input-container>
+  <input
+    mdInput
+    placeholder="Description"
+    [ngModel]="data.description"
+    (ngModelChange)="formChange($event, 'description')">
+</md-input-container>

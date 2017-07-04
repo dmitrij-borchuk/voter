@@ -1,3 +1,10 @@
-<p>
-  votings-list works!
-</p>
+<div class="container">
+  <md-nav-list>
+    <md-list-item
+      class="item"
+      *ngFor='let value of data; trackBy: index;'
+      (click)="itemClickHandler(value)">
+      {{value.title}}
+    </md-list-item>
+  </md-nav-list>
+</div>
